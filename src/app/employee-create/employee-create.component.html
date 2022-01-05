@@ -1,0 +1,23 @@
+<div class="container custom-container">
+    <div class="col-mg-12">
+        <h3 class="mb-3 text-center">Criar Registro</h3>
+
+        <!-- criando formulario -->
+        <div class="form-group">
+
+
+            <!-- two way binding [(ngModel)] -->
+            <input type="text" [(ngModel)]=employeeDetails.name placeholder="Nome" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="email" [(ngModel)]=employeeDetails.email placeholder="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="text" [(ngModel)]=employeeDetails.phone placeholder="Telefone" class="form-control" />
+        </div>
+
+        <button class="btn btn-success btn-lg btn-block" (click) = "addEmployee()">Criar um Registro</button>
+    </div>
+
+    
+</div>
