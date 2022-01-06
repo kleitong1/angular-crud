@@ -1,1 +1,18 @@
-<p>employee-edit works!</p>
+<div class="container custom-container">
+    <div class="col-md-12">
+        <h2 class="mb3 text-center">Update Record</h2>
+        <!-- criando o formulário -->
+        <div class="form-group">
+            <input type="text" [(ngModel)]="dataRecord.name" placeholder="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="email" [(ngModel)]="dataRecord.email" placeholder="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="dataRecord.phone" placeholder="Phone" class="form-control" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block" (click)="updateRecord()">Update Record</button>
+        </div>
+    </div>
+</div>
